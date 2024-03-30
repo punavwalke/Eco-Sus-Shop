@@ -22,7 +22,7 @@
 ![image](https://github.com/punavwalke/Eco-Sus-Shop/assets/68280225/2d9ce110-9688-4b4c-bb89-afe55a9aab3b)
 * **Admin Login**
 ![image](https://github.com/punavwalke/Eco-Sus-Shop/assets/68280225/4d8e4d94-ceb9-4aaa-bcbb-6c489282d586)
-* **Home Page**
+* **Admin Home Page**
 ![image](https://github.com/punavwalke/Eco-Sus-Shop/assets/68280225/7f33ad92-a774-488b-b4e9-a096ed0176fe)
 * **Show Product**
   ![image](https://github.com/punavwalke/Eco-Sus-Shop/assets/68280225/c049ef89-e6fc-4d33-b6ac-058fcdd1813b)
