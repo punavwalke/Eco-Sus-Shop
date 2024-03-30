@@ -41,14 +41,6 @@
         <li class="nav-item">
           <%= link_to "Log out", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link active"  %>
         </li>
-        <li class="nav-item">
-<div class="templatemo_right_section_content">
-<%= form_with url: "/gallery/search", method: :get do |form| %>
-<%= form.label :query, "Search for:" ,class:"text-light"%>
-<%= form.text_field :keyword ,class:'form-control'%>
-<%= form.submit "Search" %>
-<% end %>
-        </li>
         <% else %>
         <li class="nav-item">
           <%= link_to "Sign up", new_user_registration_path, class: "nav-link active"  %> 
@@ -69,6 +61,13 @@
         <% end %>
     </div>
     <% if user_signed_in? %>
+    <li class="nav-item d-flex">
+              <%= form_with url: "/gallery/search",html: {class:"form-style"}, method: :get do |form| %>
+              <%= form.label :query, "Search for:" ,class:"text-light me-1" %>
+<%= form.text_field :keyword ,class:'form-control w-50'%>
+<%= form.submit "Search" ,class:'button-70'%>
+<% end %>
+        </li>
     <div class="navbar-text text-light">Logged in as <strong><%= current_user.email %></strong></div>
     <%end%>
   </div>
