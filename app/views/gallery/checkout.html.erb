@@ -1,0 +1,72 @@
+<%= flash[:notice]%>
+<h2 style="display:flex;align-items:center;justify-content:center" class="mt-2">Checkout</h2>
+<section class="vh-100">
+  <div class="container h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="data:image/png;base64,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"
+          class="img-fluid" alt="Phone image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0UtxHPJ06tS_AUUERgMxeaADDZxVsYVwkw&usqp=CAU"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+       <h3>Total Amount to paid : <%= number_to_currency(session[:amount]) %></h3>
+       <%= form_with url: "/gallery/checkout", method: :post do |f| %>
+  <div class="field">
+    <%= f.label :first_name,class:'form-label' %><br />
+    <%= f.text_field :first_name ,class:'form-control form-control'%>
+  </div>
+  <div class="field">
+    <%= f.label :last_name,class:'form-label' %><br />
+    <%= f.text_field :last_name ,class:'form-control form-control'%>
+  </div>
+  <div class="field">
+    <%= f.label :credit_card_no ,class:'form-label'%><br />
+    <%= f.text_field :credit_no,class:'form-control form-control' %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_expiry ,class:'form-label'%><br />
+        <select name="check[month]" id="check_out_month">
+        <option selected value="01">Janurary
+        <option  value="02">Feburary
+        <option  value="03">March
+        <option  value="04">April
+        <option  value="05">May
+        <option  value="06">June
+        <option  value="07">July
+        <option  value="08">August
+        <option  value="09">September
+        <option  value="10">October
+        <option  value="11">November
+        <option  value="12">December
+        </select>
+        <select name="check[year]" id=check_out_year">
+        <option selected value="2024">2024
+        <option  value="2025">2025
+        <option  value="2026">2026
+        <option  value="2027">2027
+        <option  value="2028">2028
+        <option  value="2029">2029
+        <option  value="2030">2030
+        <option  value="2031">2031
+        <option  value="2032">2032
+        <option  value="2033">2033
+    </select>
+  </div>
+ 
+  <div class="field">
+    <%= f.label :verification_number ,class:'form-label'%><br />
+    <%= f.text_field :verification_number ,class:'form-control form-control'%>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", class:"mt-2 btn btn-outline-primary"%>
+  </div>
+  <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+

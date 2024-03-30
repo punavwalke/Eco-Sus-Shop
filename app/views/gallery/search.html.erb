@@ -1,0 +1,25 @@
+<h2 style="display:flex;align-items:center;justify-content:center" class="mt-2">Products Gallery</h2>
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% @products_gallery.each do |product|%>
+  <div class="col pb-5 ps-5 pe-5 pt-5">
+    <div class="card h-100">
+        <%= image_tag product.product_image,class:'card-img-top'%>
+      <div class="card-body">
+        <h5 class="card-title"><%= product.name %></h5>
+        <p class="card-text">
+          Category : <%= product.category %>
+        </p>
+         <p class="card-text">
+          Price : Rs.<%= product.price %><br />
+        </p>
+        <div class="card-footer">
+          <%= button_to 'Add to Cart', line_items_path(:store_id => product.id),class:"btn btn-outline-primary" %>
+
+         </div>
+      </div>
+    </div>
+  </div>
+  <%end%>
+</div>
+</div>

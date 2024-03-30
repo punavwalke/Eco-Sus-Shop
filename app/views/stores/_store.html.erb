@@ -1,0 +1,46 @@
+<div id="<%= dom_id store %>">
+  <p>
+    <strong>Name:</strong>
+    <%= store.name %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= store.category %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= store.description %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= store.price %>
+  </p>
+
+  <% if store.product_image.attached? %>
+<%= image_tag store.product_image ,height: "100",width: "75"%>
+<% end %>
+
+  <p>
+    <strong>Ingredients:</strong>
+    <%= store.ingredients %>
+  </p>
+
+  <p>
+    <strong>Made without:</strong>
+    <%= store.made_without %>
+  </p>
+
+  <p>
+    <strong>Packaging:</strong>
+    <%= store.packaging %>
+  </p>
+
+  <p>
+    <strong>Certifications:</strong>
+    <%= store.certifications %>
+  </p>
+
+</div>

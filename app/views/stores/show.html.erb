@@ -1,0 +1,13 @@
+<div class="container p-4">
+  <p style="color: green"><%= notice %></p>
+
+<%= render @store %>
+
+<div class="d-flex">
+  <%= link_to "Edit this store", edit_store_path(@store) ,class:'btn btn-outline-primary me-3'%> 
+  <%= link_to "Back to stores", stores_path,class:'btn btn-outline-primary me-3' %>
+
+  <%= button_to "Destroy this store", @store, method: :delete,class:'btn btn-outline-primary' %>
+</div>
+
+</div>

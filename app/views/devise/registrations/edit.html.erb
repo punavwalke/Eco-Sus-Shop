@@ -1,0 +1,81 @@
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+        <h2 class="h3 mb-4 page-title mt-2">Edit User</h2>
+        <div class="my-4">
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                </li>
+            </ul>
+            <form>
+                <div class="row mt-5 align-items-center">
+                    <div class="col-md-3 text-center mb-5">
+                        <div class="avatar avatar-xl">
+                            <img src="data:image/png;base64,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" alt="..." class="avatar-img rounded-circle" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <h4 class="mb-1"><%=current_user.email%></h4>
+                                <p class="small mb-3"><span class="badge badge-dark">New York, USA</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="form-row">
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group col-md-6">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:'form-control'%>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="form-group col-md-6">
+    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.password_field :password, autocomplete: "new-password",class:'form-control' %>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> characters minimum</em>
+    <% end %>
+  </div>
+
+  <div class="form-group col-md-6">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",class:'form-control' %>
+  </div>
+
+  <div class="form-group col-md-6">
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, autocomplete: "current-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update" ,class:'btn btn-primary mt-2'%>
+  </div>
+<% end %>
+                </div>
+               
+                <hr class="my-4" />
+<div>
+  <h3>Cancel my account</h3>
+
+<div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), class:'btn btn-outline-danger',data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %></div>
+
+<%= link_to "Back", :back %>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
